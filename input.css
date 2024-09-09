@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+html{
+    background-color: #111827;
+}
+
+.cl{
+    border: 1px solid #C084FC;
+    color: #C084FC;
+    transition: all ease 1s;
+}
+
+.cl:hover{
+    background-color: #581C87;
+    color: #fff;
+}
+
+a{
+    transition: all ease .3s;
+}
+
+a:hover:not(.aa){
+    color: #fff;
+}
+

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Portafolio Web</title>
+  <link rel="stylesheet" href="output.css">
+
+</head>
+
+<body class="scroll-smooth">
+
+    <header id="navHeader" class="fixed inset-x-0 top-0 z-50 transition duration-500 ease-in-out">
+      <nav  class="flex items-center justify-between p-6 lg:px-8 transition-all duration-500 ease-in-out" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <h2 class="text-2xl  font-bold text-zinc-100">JuanG</h2>
+          </a>
+        </div>
+
+        <div class="hidden lg:flex lg:gap-x-12 ">
+          <a href="#home" class="text-sm font-semibold leading-6 text-zinc-300">Inicio</a>
+          <a href="#about" class="text-sm font-semibold leading-6 text-zinc-300">Sobre mí</a>
+          <a href="#habilidades" class="text-sm font-semibold leading-6 text-zinc-300">Stack</a>
+          <a href="#proyectos" class="text-sm font-semibold leading-6 text-zinc-300">Proyectos</a>
+        </div>
+        <div class="block lg:hidden">
+          <button id="open-menu-button" class="text-white">
+            <span class="sr-only">Open menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-50 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true">
+          <div
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#f84b93] to-[#870a90] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div id="mobile-menu" class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <h2 class="text-2xl  font-bold text-zinc-600">JuanG</h2>
+            </a>
+            <button type="button" id="close-menu-button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#home"
+                  class="aa -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Inicio</a>
+                <a href="#about"
+                  class="aa -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Sobre
+                  mí</a>
+                <a href="#habilidades"
+                  class="aa -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Stack</a>
+                <a href="#proyectos"
+                  class="aa -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Proyectos</a>
+           
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <!-- hero section -->
+
+  <div id="home" class="relative isolate z-20  px-6 pt-14 lg:px-8">
+
+    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+
+      <div class="text-center">
+        <h1 class="text-5xl font-bold text-white tracking-tight  sm:text-6xl">JUAN GUILLERMO PALACIO</h1>
+        <p class="mt-6 text-lg leading-8 text-zinc-300">Developer PHP & MySQL</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="cvpdf.pdf" class="rounded-md cl px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ">Descargar
+            CV</a>
+          <a href="https://wa.me/+573197336870?text=Hola%20He%20Visto%20tu%20hoja%20de%20vida" class="text-sm font-semibold leading-6 text-zinc-300">Contacto <span
+              aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <div id="about" class="relative isolate px-6 pt-14 pb-14 lg:px-8">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+      <div
+        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#48194f] to-[#eb89fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+
+    <div class="mx-auto w-5/6">
+      <h2 class="text-5xl py-2 text-white">Sobre mí</h2>
+      <p class="text-lg text-zinc-300">Soy una persona responsable y honesta con una pasión innata por la tecnología. Mi
+        enfoque emprendedor y entusiasta me impulsa a destacar en el mundo del desarrollo web y el diseño. Cuento con
+        habilidades en Html5, Css3, Sass, Bootstrap 5, Tailwind CSS, JavaScript, MySQL, y Php. Mi objetivo es seguir
+        aprendiendo y aplicando mis habilidades para crear soluciones tecnológicas excepcionales y mejorar la
+        experiencia del usuario.</p>
+    </div>
+  </div>
+
+  <div id="habilidades" class="relative isolate px-6 pt-14 pb-14 ">
+    <div class="mx-auto w-5/6">
+      <h2 class="text-5xl py-2 text-center mb-10 text-white">Stack  </h2>
+      <div class="grid grid-rows-4 grid-cols-1 gap-5 lg:grid-cols-2">
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1">HTML</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1 ">CSS</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1 ">JAVASCRIPT</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1 ">PHP</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1 ">MYSQL</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1 ">BOOTSTRAP</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1 ">TAILWIND</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex items-center ">
+          <h3 class="text-zinc-300 w-24 mr-1 ">LEAFLET</h3>
+          <div class="flex  space-x-2">
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+            <div class="w-4 h-4 bg-purple-900 rounded-full"></div>
+          </div>
+        </div>
+
+      </div>
+      <div
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true">
+        <div
+          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#f84b93] to-[#870a90] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <div id="proyectos" class="relative isolate px-6">
+    <div class="mx-auto w-5/6">
+      <h2 class="text-5xl py-10 text-white">Proyectos</h2>
+      <div class="grid grid-rows-1 grid-cols-1 gap-3 lg:grid-cols-2">
+        <div>
+          <img class="rounded-3xl	" src="img/inn.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer aria-labelledby="footer-heading" class="bg-gray-900 text-white py-12">
+   
+</div>
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="mx-auto w-5/6  px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between">
+        <div class="space-y-8">
+          <div>
+            <h3>JuanG</h3>
+            <p class="text-gray-400 text-base">
+              Developer PHP & MySQL
+            </p>
+          </div>
+
+        </div>
+        <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0">
+          <div>
+            <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Menú</h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li><a href="#home" class="text-base text-gray-400 hover:text-gray-300">Inicio</a></li>
+              <li><a href="#about" class="text-base text-gray-400 hover:text-gray-300">Sobre mí</a></li>
+              <li><a href="#habilidades" class="text-base text-gray-400 hover:text-gray-300">Stack</a></li>
+              <li><a href="#proyectos" class="text-base text-gray-400 hover:text-gray-300">Proyectos</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+     
+      
+    </div>
+  </footer>
+
+  
+
+
+
+  <script>
+    //Codigo para centrar un contendio al acceder desde el nav o menu de navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        const yOffset = -window.innerHeight / 2 + targetSection.offsetHeight / 2;
+        const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({
+          top: y,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    //Codigo para cerrar y mostrar menu de navegación para dispositivos moviles
+    document.addEventListener('DOMContentLoaded', function () {
+      const menu = document.getElementById('mobile-menu');
+  const openButton = document.getElementById('open-menu-button');
+  const closeButton = document.getElementById('close-menu-button');
+  const menuLinks = document.getElementsByClassName('aa'); // Todos los enlaces con clase 'aa'
+
+  // Función para abrir el menú
+  function openMenu() {
+    menu.classList.remove('hidden');
+  }
+
+  // Función para cerrar el menú
+  function closeMenu() {
+    menu.classList.add('hidden');
+  }
+
+  // Añadir eventos de clic a los botones
+  openButton.addEventListener('click', openMenu);
+  closeButton.addEventListener('click', closeMenu);
+
+  // Añadir eventos de clic a cada enlace para cerrar el menú
+  for (let i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', closeMenu);
+  }
+
+      // Añadir eventos de clic a los botones
+      openButton.addEventListener('click', openMenu);
+      closeButton.addEventListener('click', closeMenu);
+    });
+
+  window.addEventListener('scroll', function() {
+  const header = document.getElementById('navHeader');
+  const screenWidth = window.innerWidth;
+
+  // Solo aplica cambios si la pantalla es mayor que 1024px (breakpoint lg en Tailwind)
+  if (screenWidth > 1024) {
+    if (window.scrollY > 50) {
+      header.classList.add('bg-zinc-900', 'shadow-lg', 'opacity-90');
+    } else {
+      header.classList.remove('bg-zinc-900', 'shadow-lg', 'opacity-90');
+    }
+  } else {
+    // Si la pantalla es menor o igual a 1024px, no añadimos ni quitamos clases de background
+    header.classList.remove('bg-zinc-900', 'shadow-lg', 'opacity-90');
+  }
+});
+
+window.addEventListener('resize', function() {
+  const header = document.getElementById('navHeader');
+  const screenWidth = window.innerWidth;
+
+  // Resetea el fondo cuando se cambia el tamaño de la pantalla a móvil
+  if (screenWidth <= 1024) {
+    header.classList.remove('bg-zinc-900', 'shadow-lg', 'opacity-90');
+  }
+});
+  </script>
+
+</body>
+
+</html>
